@@ -12,10 +12,8 @@ export let errorRate = new Rate('errors')
 /*Ramp-Up and Ramp-Down VUs*/
 export let options = {
     stages :[
-        {duration: '5s', target : 2},
-        {duration: '10s', target : 7},
         {duration: '5s', target : 5},
-        {duration: '5s', target : 0},
+        {duration: '10s', target : 10}
     ],
     thresholds: {
         errors  :['rate<0.1'] //error 10%
